@@ -1,0 +1,77 @@
+body {
+    background:var(--primary-color)
+}
+
+.container {
+    margin-top: 2rem;
+    max-width: 25rem;
+    background: var(--seconary-color);
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px #ccc;
+}
+
+#weatherwidget {
+    min-height: 18rem;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.card {
+    width: 100%;
+}
+
+.card .card-subtitle {
+    font-size: 4rem;
+}
+
+.card .cel:after {
+    content: "°C";
+    position: absolute;
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+    font-weight: 400;
+}
+
+.card .far:after {
+    content: "°F";
+    position: absolute;
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+    font-weight: 400;
+}
+
+.units a {
+    color: #666;
+    text-decoration: none;
+}
+
+.units a.active {
+    color: #ccc;
+}
+/* dark */
+#icon{
+    width: 60px;
+    cursor: pointer;
+    margin-left: 40px;
+    border:4px solid wheat;
+    border-radius: 40px;
+     margin-top: 50px;  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+:root{
+    --primary-color:radial-gradient(circle,
+            rgba(1, 4, 15, 0.673) 0%,
+            rgba(12, 2, 1, 0.936) 100%);
+    --seconary-color:#000000ca;
+   
+}
+.dark-theme{
+--primary-color: radial-gradient(circle,
+            rgba(241, 237, 8, 0.784) 0%,
+            rgba(247, 89, 10, 0.936) 100%);
+    --seconary-color: rgb(222, 55, 55);
+}
